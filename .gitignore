@@ -1,0 +1,14 @@
+# app
+/backend
+/vendor
+/web
+/.env
+/neucore-*.tar.gz
+
+# IDEs
+/.idea
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
