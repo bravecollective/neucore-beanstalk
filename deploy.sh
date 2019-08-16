@@ -3,7 +3,7 @@
 VERSION=1.3.0
 RELEASE_BASE_URL=https://github.com/tkhamez/neucore/releases/download
 
-# cleanup
+# cleanup (for dev env)
 rm -Rf backend
 rm -Rf web
 

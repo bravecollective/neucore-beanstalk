@@ -3,6 +3,8 @@
 Deploys a pre-build Neucore version from https://github.com/tkhamez/neucore/releases
 to AWS Elastic Beanstalk.
 
+(If you clone this, remove .ebextensions/keys.config, it will not work for you ;).)
+
 ## Create
 
 - Add an IAM user with Policy "AWSElasticBeanstalkFullAccess"
@@ -10,11 +12,11 @@ to AWS Elastic Beanstalk.
 - Create app environment:
     ```
     eb init -i
-    eb create prod
+    eb create neucore-prod
     ```
 - Add a security group for the database that allows the new environment
 - Add a database for Neucore
-- Add environment Variables
+- Add environment variables
   - BRAVECORE_APP_ENV and BRAVECORE_DATABASE_URL
   - BRAVECORE_EVE_CALLBACK_URL, BRAVECORE_EVE_CLIENT_ID and BRAVECORE_EVE_SECRET_KEY
   - optional BRAVECORE_SESSION_SECURE=0 if you are testing and have not setup HTTPS
@@ -24,7 +26,7 @@ to AWS Elastic Beanstalk.
 
 ## Deploy/Update
 
-- Adjust the Version in `deploy.sh` to an existing release
+- Adjust the version in `deploy.sh` to an existing release
 - Then execute
     ```sh
     git add .
