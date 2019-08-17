@@ -27,8 +27,5 @@ to AWS Elastic Beanstalk.
 ## Deploy/Update
 
 - Adjust the version in `deploy.sh` to an existing release
-- Then execute
-    ```sh
-    git add .
-    eb deploy --staged
-    ```
+- Then commit and execute: `eb deploy`,  
+  or only: `git add . && eb deploy --staged`
