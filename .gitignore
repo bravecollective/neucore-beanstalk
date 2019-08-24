@@ -3,7 +3,6 @@
 /vendor
 /web
 /.env
-/neucore-*.tar.gz
 
 # IDEs
 /.idea

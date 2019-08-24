@@ -27,5 +27,10 @@ to AWS Elastic Beanstalk.
 ## Deploy/Update
 
 - Adjust the version in `deploy.sh` to an existing release
-- Then commit and execute: `eb deploy`,  
-  or only: `git add . && eb deploy --staged`
+- Then commit and execute: `eb deploy`
+
+You can also create a distribution with the `dist.sh` script from the main neucore repository, add
+that file here and deploy that. For example:
+- add the file `neucore-1198402.tar.gz`
+- set version to `1198402`
+- `git add . && eb deploy --staged --message "commit 1198402"`
