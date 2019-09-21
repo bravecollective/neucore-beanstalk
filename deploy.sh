@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION=1.4.2
+VERSION=1.4.3
 RELEASE_BASE_URL=https://github.com/tkhamez/neucore/releases/download
 
 # cleanup (for dev env)
@@ -20,6 +20,7 @@ fi
 tar -xzf neucore-${VERSION}.tar.gz
 mv neucore/backend backend
 mv neucore/web web
+cp favicon.ico web/favicon.ico
 rm -R neucore
 
 # copy .env file for dev environment
