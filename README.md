@@ -1,7 +1,7 @@
 # neucore-beanstalk
 
 Deploys a pre-build Neucore version from https://github.com/tkhamez/neucore/releases
-to AWS Elastic Beanstalk.
+or a local build to [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk).
 
 (If you clone this, remove .ebextensions/keys.config, it will not work for you ;).)
 
@@ -29,8 +29,8 @@ to AWS Elastic Beanstalk.
 - Adjust the version in `deploy.sh` to an existing release
 - Then commit and execute: `eb deploy`
 
-You can also create a distribution with the `dist.sh` script from the main neucore repository, add
-that file here and deploy that. For example:
+You can also create a distribution with the `dist.sh` script from the 
+[main Neucore repository](https://github.com/tkhamez/neucore), add that file here and deploy that. For example:
 - add the file `neucore-1198402.tar.gz`
 - set version to `1198402`
-- `git add . && eb deploy --staged --message "commit 1198402"`
+- `git add . && eb deploy --staged --message "commit 57391a3"`
