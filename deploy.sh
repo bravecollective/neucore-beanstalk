@@ -21,6 +21,7 @@ tar -xzf neucore-${VERSION}.tar.gz
 mv neucore/backend backend
 mv neucore/web web
 cp favicon.ico web/favicon.ico
+cp robots.txt web/robots.txt
 rm -R neucore
 
 # copy .env file for dev environment
