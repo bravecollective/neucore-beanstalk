@@ -31,6 +31,6 @@ or a local build to [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanst
 
 You can also create a distribution with the `dist.sh` script from the 
 [main Neucore repository](https://github.com/tkhamez/neucore), add that file here and deploy that. For example:
-- add the file `neucore-1198402.tar.gz`
-- set version to `1198402`
+- add the file `neucore-57391a3.tar.gz`
+- set version to `57391a3`
 - `git add . && eb deploy --staged --message "commit 57391a3"`
