@@ -41,5 +41,7 @@ cd backend || exit 1
 vendor/bin/doctrine-migrations migrations:migrate --no-interaction
 bin/console doctrine-fixtures-load
 
+chown -R webapp:webapp ../../shared
+
 echo "Deployed Neucore v${VERSION}"
 exit 0

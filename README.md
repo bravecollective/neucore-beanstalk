@@ -1,4 +1,4 @@
-# neucore-beanstalk
+# Neucore Beanstalk
 
 Deploys a pre-build Neucore version from https://github.com/tkhamez/neucore/releases
 or a local build to [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk).
@@ -17,12 +17,14 @@ or a local build to [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanst
 - Add a security group for the database that allows the new environment
 - Add a database for Neucore
 - Add environment variables
-  - BRAVECORE_APP_ENV and BRAVECORE_DATABASE_URL
-  - BRAVECORE_EVE_CALLBACK_URL, BRAVECORE_EVE_CLIENT_ID and BRAVECORE_EVE_SECRET_KEY
-  - optional BRAVECORE_SESSION_SECURE=0 if you are testing and have not setup HTTPS
-  - optional BRAVECORE_LOG_PATH=/var/app/shared/logs
-  - optional BRAVECORE_CACHE_DIR=/var/app/shared/cache
-  - optional BRAVECORE_EVE_SCOPES and any other setting you want to change
+  - NEUCORE_APP_ENV and NEUCORE_DATABASE_URL
+  - NEUCORE_EVE_CALLBACK_URL, NEUCORE_EVE_CLIENT_ID and NEUCORE_EVE_SECRET_KEY
+  - optional NEUCORE_SESSION_SECURE=0 if you are testing and have not setup HTTPS
+  - optional NEUCORE_LOG_PATH=/var/app/shared/logs
+  - optional NEUCORE_CACHE_DIR=/var/app/shared/cache
+  - optional NEUCORE_EVE_SCOPES and any other setting you want to change
+
+Note: You need to redeploy the application after changing an environment variable.
 
 ## Deploy/Update
 
