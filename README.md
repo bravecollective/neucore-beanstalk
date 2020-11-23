@@ -3,7 +3,7 @@
 Deploys a pre-build Neucore version from https://github.com/tkhamez/neucore/releases
 or a local build to [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk).
 
-(If you clone this, remove .ebextensions/keys.config, it will not work for you.)
+(If you clone this, remove .ebextensions/keys.config and the tracking code from theme.js, they won't work for you.)
 
 ## Create
 
