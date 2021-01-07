@@ -1,0 +1,9 @@
+[submodule "plugins/slack"]
+	path = plugins/slack
+	url = https://github.com/bravecollective/neucore-plugin-slack
+[submodule "plugins/forum"]
+	path = plugins/forum
+	url = https://github.com/bravecollective/neucore-plugin-forum
+[submodule "plugins/mumble"]
+	path = plugins/mumble
+	url = https://github.com/bravecollective/neucore-plugin-mumble
