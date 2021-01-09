@@ -19,6 +19,7 @@ or a local build to [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanst
 - Add environment variables
   - NEUCORE_APP_ENV and NEUCORE_DATABASE_URL
   - NEUCORE_EVE_CALLBACK_URL, NEUCORE_EVE_CLIENT_ID and NEUCORE_EVE_SECRET_KEY
+  - All required variables for each plugin
   - optional NEUCORE_SESSION_SECURE=0 if you are testing and have not setup HTTPS
   - optional NEUCORE_LOG_PATH=/var/app/shared/logs
   - optional NEUCORE_CACHE_DIR=/var/app/shared/cache
@@ -28,8 +29,13 @@ Note: You need to redeploy the application after changing an environment variabl
 
 ## Deploy/Update
 
+Initial:
+- `git clone https://github.com/bravecollective/neucore-beanstalk --recurse-submodules`
+
+Update:
+- `git pull --recurse-submodules`
 - Adjust the version in `deploy.sh` to an existing release
-- Then commit and execute: `eb deploy`
+- Then commit and execute: `eb deploy`, make sure that eb includes submodules
 
 You can also create a distribution with the `dist.sh` script from the 
 [main Neucore repository](https://github.com/tkhamez/neucore), add that file here and deploy that. For example:

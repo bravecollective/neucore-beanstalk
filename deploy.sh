@@ -20,9 +20,9 @@ fi
 tar -xzf neucore-${VERSION}.tar.gz
 mv neucore/backend backend
 mv neucore/web web
-cp favicon.ico web/favicon.ico
-cp robots.txt web/robots.txt
-cp theme.js web/theme.js
+cp files/favicon.ico web/favicon.ico
+cp files/robots.txt web/robots.txt
+cp files/theme.js web/theme.js
 rm -R neucore
 
 # copy .env file for dev environment
@@ -37,12 +37,17 @@ if [[ ! -d ../shared/cache ]]; then mkdir ../shared/cache; fi
 rm -Rf ../shared/cache/di
 rm -Rf ../shared/cache/proxies
 cp -R backend/var/cache/proxies ../shared/cache/proxies
+chown -R webapp:webapp ../shared
 
 cd backend || exit 1
 vendor/bin/doctrine-migrations migrations:migrate --no-interaction
 bin/console doctrine-fixtures-load
-
-chown -R webapp:webapp ../../shared
+cd ..
 
 echo "Deployed Neucore v${VERSION}"
+
+# plugins
+plugins/forum/install-phpBB.sh || exit 1
+echo "Installed plugins."
+
 exit 0
