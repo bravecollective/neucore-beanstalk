@@ -47,6 +47,7 @@ cd ..
 echo "Deployed Neucore v${VERSION}"
 
 # plugins
+chmod +x plugins/forum/install-phpBB.sh
 plugins/forum/install-phpBB.sh || exit 1
 echo "Installed plugins."
 
