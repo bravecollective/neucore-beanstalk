@@ -7,3 +7,6 @@
 [submodule "plugins/mumble"]
 	path = plugins/mumble
 	url = https://github.com/bravecollective/neucore-plugin-mumble
+[submodule "slack_checks"]
+	path = slack_checks
+	url = https://github.com/bravecollective/Neucore-Slack-Link.git
