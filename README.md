@@ -9,7 +9,7 @@ or a local build to [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanst
 
 - Add an IAM user with Policy "AWSElasticBeanstalkFullAccess"
 - Create a database (RDS)
-- Create app environment:
+- Create app environment, select "PHP 7.4" platform:
     ```
     eb init -i
     eb create neucore-prod
@@ -25,7 +25,8 @@ or a local build to [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanst
   - optional NEUCORE_CACHE_DIR=/var/app/shared/cache
   - optional NEUCORE_EVE_SCOPES and any other setting you want to change
 
-Note: You need to redeploy the application after changing an environment variable.
+Note: You need to redeploy the application after changing an environment variable or execute
+`.platform/hooks/postdeploy/01_set_env.sh`.
 
 ## Deploy/Update
 
