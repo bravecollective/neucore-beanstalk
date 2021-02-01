@@ -9,6 +9,7 @@ setTheme('Darkly');
 
 var _paq = window._paq = window._paq || [];
 _paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
 (function() {
     var u="//hello.tian-space.net/";
     _paq.push(['setTrackerUrl', u+'helloP']);
