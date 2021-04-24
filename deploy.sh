@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION=740cb59f
+VERSION=1.20.0
 RELEASE_BASE_URL=https://github.com/tkhamez/neucore/releases/download
 
 # cleanup (for dev env)
@@ -22,7 +22,7 @@ mv neucore/backend backend
 mv neucore/web web
 cp files/favicon.ico web/favicon.ico
 cp files/robots.txt web/robots.txt
-cp files/theme.js web/theme.js
+cp files/theme.js web/dist/theme.js
 rm -R neucore
 
 # copy .env file for dev environment
