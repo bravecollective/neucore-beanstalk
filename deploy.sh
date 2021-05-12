@@ -20,7 +20,7 @@ fi
 tar -xzf neucore-${VERSION}.tar.gz
 mv neucore/backend backend
 mv neucore/web web
-cp files/favicon.ico web/favicon.ico
+cp files/favicon.ico web/dist/favicon.ico
 cp files/robots.txt web/robots.txt
 cp files/theme.js web/dist/theme.js
 rm -R neucore
