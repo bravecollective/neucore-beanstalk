@@ -22,6 +22,7 @@ or a local build with plugins to [AWS Elastic Beanstalk](https://aws.amazon.com/
   - optional NEUCORE_LOG_PATH=/var/app/shared/logs
   - optional NEUCORE_CACHE_DIR=/var/app/shared/cache
   - optional NEUCORE_EVE_SCOPES and any other setting you want to change
+  - Any variables needed for plugins.
 
 Note: You need to redeploy the application after changing an environment variable or execute
 `.platform/hooks/postdeploy/01_set_env.sh`.
