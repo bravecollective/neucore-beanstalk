@@ -51,7 +51,4 @@ chmod +x plugins/forum/install-phpBB.sh
 plugins/forum/install-phpBB.sh || exit 1
 echo "Installed plugins."
 
-# slack-channel-manage
-chmod +x slack-channel-manage/bin/console
-
 exit 0
