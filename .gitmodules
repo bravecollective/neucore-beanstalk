@@ -1,18 +1,12 @@
 [submodule "plugins/slack"]
 	path = plugins/slack
-	url = https://github.com/bravecollective/neucore-plugin-slack
+	url = https://github.com/bravecollective/neucore-plugin-slack.git
 [submodule "plugins/forum"]
 	path = plugins/forum
-	url = https://github.com/bravecollective/neucore-plugin-forum
+	url = https://github.com/bravecollective/neucore-plugin-forum.git
 [submodule "plugins/mumble"]
 	path = plugins/mumble
-	url = https://github.com/bravecollective/neucore-plugin-mumble
-[submodule "slack_checks"]
-	path = slack_checks
-	url = https://github.com/bravecollective/Neucore-Slack-Link.git
-[submodule "slack-channel-manage"]
-	path = slack-channel-manage
-	url = https://github.com/bravecollective/slack-channel-manage.git
+	url = https://github.com/bravecollective/neucore-plugin-mumble.git
 [submodule "plugins/discord"]
 	path = plugins/discord
-	url = https://github.com/tkhamez/neucore-discord-plugin.git
+	url = https://github.com/bravecollective/neucore-discord-plugin.git
