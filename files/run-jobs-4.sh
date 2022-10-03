@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
-# 64m, 45m = 109m
+# 68m, 40m, 19m = 127m
 /var/app/current/backend/bin/console update-service-accounts --log --hide-details
 /var/app/current/backend/bin/console update-corporations --log --hide-details
+/var/app/current/backend/bin/console update-member-tracking --log
