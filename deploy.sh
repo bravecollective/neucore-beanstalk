@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION=1.38.0
+VERSION=1.39.0
 RELEASE_BASE_URL=https://github.com/tkhamez/neucore/releases/download
 
 # cleanup (for dev env)
@@ -16,12 +16,11 @@ if [[ ! -f neucore-${VERSION}.tar.gz ]]; then
   exit 1
 fi
 
-# extract and move files
+# extract, move and replace files
 tar -xzf neucore-${VERSION}.tar.gz
 mv neucore/backend backend
 mv neucore/web web
-cp files/favicon.ico web/dist/favicon.ico
-cp files/robots.txt web/robots.txt
+cp files/favicon.ico web/favicon.ico
 cp files/theme.js web/dist/theme.js
 rm -R neucore
 

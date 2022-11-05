@@ -2,11 +2,10 @@
  * This file is loaded (blocking) right before the closing "head" tag.
  */
 
-// Set the default theme. See frontend/src/mixin.js for possible values.
-setTheme('Darkly');
+// Set the default theme. See frontend/src/classes/Data.js for possible values.
+window.setTheme('Darkly');
 
-// Add other code below this line - e.g. for user tracking
-
+// Add other code below this line, e.g. for analytics software.
 var _paq = window._paq = window._paq || [];
 _paq.push(['trackPageView']);
 _paq.push(['enableLinkTracking']);
