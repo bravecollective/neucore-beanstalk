@@ -36,7 +36,7 @@ Update:
 - Adjust the version in `deploy.sh` to an existing release.
 - Then commit and execute: `eb deploy`, make sure that eb includes submodules.
 
-You can also create a distribution with the `dist.sh` script from the 
+You can also create a distribution with the `setup/dist.sh` script from the 
 [Neucore repository](https://github.com/tkhamez/neucore), add that file here and deploy that. For example:
 - add the file `neucore-57391a3.tar.gz`
 - set version to `57391a3`
