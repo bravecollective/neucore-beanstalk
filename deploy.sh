@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION=1.39.0
+VERSION=1.40.0
 RELEASE_BASE_URL=https://github.com/tkhamez/neucore/releases/download
 
 # cleanup (for dev env)
