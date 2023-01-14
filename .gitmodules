@@ -4,9 +4,6 @@
 [submodule "plugins/forum"]
 	path = plugins/forum
 	url = https://github.com/bravecollective/neucore-plugin-forum.git
-[submodule "plugins/mumble"]
-	path = plugins/mumble
-	url = https://github.com/bravecollective/neucore-plugin-mumble.git
 [submodule "plugins/discord"]
 	path = plugins/discord
 	url = https://github.com/bravecollective/neucore-discord-plugin.git
