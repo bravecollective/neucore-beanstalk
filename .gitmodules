@@ -10,3 +10,6 @@
 [submodule "plugins/mumble"]
 	path = plugins/mumble
 	url = https://github.com/bravecollective/neucore-mumble-plugin.git
+[submodule "plugins/general"]
+	path = plugins/general
+	url = https://github.com/bravecollective/neucore-plugin-general.git
