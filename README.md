@@ -7,10 +7,10 @@ or a local build with plugins to [AWS Elastic Beanstalk](https://aws.amazon.com/
 
 - Add an IAM user with Policy "AWSElasticBeanstalkFullAccess"
 - Create a database (RDS)
-- Create app environment, select "PHP 8.0" platform:
+- Create app environment, select "PHP 8.1" platform:
     ```
     eb init -i
-    eb create --single -i t3a.micro
+    eb create --single -i t4g.micro
     ```
 - Add a security group for the database that allows the new environment
 - Add a database for Neucore
@@ -24,7 +24,7 @@ or a local build with plugins to [AWS Elastic Beanstalk](https://aws.amazon.com/
   - Any variables needed for plugins.
 
 Note: You need to redeploy the application after changing an environment variable or execute
-`/var/app/current/.platform/hooks/postdeploy/03_set_env.sh`.
+`sudo /var/app/current/.platform/hooks/postdeploy/03_set_env.sh`.
 
 ## Deploy/Update
 
