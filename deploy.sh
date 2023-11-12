@@ -5,6 +5,7 @@ RELEASE_BASE_URL=https://github.com/tkhamez/neucore/releases/download
 
 # cleanup (for dev env)
 rm -Rf backend
+rm -Rf setup
 rm -Rf web
 
 # download release or exit with error
@@ -19,6 +20,7 @@ fi
 # extract, move and replace files
 tar -xzf neucore-${VERSION}.tar.gz
 mv neucore/backend backend
+mv neucore/setup setup
 mv neucore/web web
 cp files/theme.js web/dist/theme.js
 rm -R neucore
