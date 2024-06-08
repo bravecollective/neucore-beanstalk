@@ -30,8 +30,7 @@ if [[ -f .env ]]; then
   cp .env backend/.env
 fi
 
-# optional shared directory with logs and cache
-if [[ ! -d ../shared ]]; then mkdir ../shared; fi
+# optional shared directory with logs and cache (shared is created in 05_neucore.config)
 if [[ ! -d ../shared/logs ]]; then mkdir ../shared/logs; fi
 if [[ ! -d ../shared/cache ]]; then mkdir ../shared/cache; fi
 rm -Rf ../shared/cache/di
